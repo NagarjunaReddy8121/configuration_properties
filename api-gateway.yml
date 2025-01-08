@@ -13,6 +13,6 @@ spring:
     gateway:
       routes:
         - id: product-service
-          uri: lb://PRODUCT-SERVICE
+          uri: lb://product-service
           predicates:
             - Path=/api/product/**
