@@ -19,3 +19,7 @@ spring:
           uri: lb://product-service
           predicates:
             - Path=/api/product/**
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/user/**
