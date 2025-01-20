@@ -15,8 +15,8 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: product-service
-          uri: lb://product-service
+        - id: PRODUCT-SERVICE
+          uri: lb://PRODUCT-SERVICE
           predicates:
             - Path=/api/product/**
           filters:
